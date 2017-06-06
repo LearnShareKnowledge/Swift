@@ -10,56 +10,71 @@ import UIKit
 
 import KDCircularProgress
 
+
 class ViewController: UIViewController {
     
-    var tvTextView : UITextView!
     
-    var hydrationMeasurementView : KDCircularProgress!
-    
-    
+    var hydrationMeasurementView : HydrationMeasurementView!
     
     override func viewDidLoad()
     {
         super.viewDidLoad() ;
         
-        tvTextView = UITextView(frame: CGRect(x: 0, y: 0, width: 300, height: 300)) ;
+        hydrationMeasurementView = HydrationMeasurementView(x:50 , y : 50 , width: 246, height: 246);
         
-        tvTextView.center = self.view.center ;
+        self.view.addSubview(hydrationMeasurementView);
         
-        tvTextView.backgroundColor = UIColor.gray ;
+        onMeasuring(message: "Measuring moisture... ") ;
         
-        tvTextView.textColor = UIColor.white ;
+        let delay = DispatchTime.now() + .seconds(4);
         
-        tvTextView.text = "Hello , i have been added dynamically"
+        // use this to test the error scenario
+        //DispatchQueue.main.asyncAfter(deadline: delay, execute:{
+        //    self.onError(message: "We got an error") ;
+
+        //});
         
-        tvTextView.font = UIFont.boldSystemFont(ofSize: 20) ;
-        
-        tvTextView.textAlignment = .justified ;
-        
-        self.view.addSubview(tvTextView) ;
-        
-        //initialize the circular progress bar 
-        
-        hydrationMeasurementView = KDCircularProgress(frame: CGRect(x :0 ,y : 0, width : 300 , height : 300)) ;
-        
-        hydrationMeasurementView.center = self.view.center ;
-        
-        hydrationMeasurementView.trackThickness = 0.2 ;
-        
-        hydrationMeasurementView.trackColor = UIColor(red : 1.0 , green : 1.0 , blue : 1.0 , alpha : 1.0) ;
-        
-        self.view.addSubview(hydrationMeasurementView) ;
-        
-        
+        DispatchQueue.main.asyncAfter(deadline: delay, execute: {
+            self.onSuccessReadOfHydration(message: "25%");
+        })
         
         
     }
     
-    override func didReceiveMemoryWarning() {
+    func onMeasuring(message : String)
+    {
+        hydrationMeasurementView.setText(message: message )
+        
+        hydrationMeasurementView.animate( endAngle: 360 , timeDuration: 4) ;
+    }
+    
+    func onError(message : String)
+    {
+        hydrationMeasurementView.setText(message: message )
+        
+        if(hydrationMeasurementView.circularProgressView.isAnimating())
+        {
+            hydrationMeasurementView.circularProgressView.stopAnimation() ;
+        }
+
+    }
+    
+    
+    func onSuccessReadOfHydration(message : String)
+    {
+        hydrationMeasurementView.setText(message: message )
+        
+        if(hydrationMeasurementView.circularProgressView.isAnimating())
+        {
+            hydrationMeasurementView.circularProgressView.stopAnimation() ;
+        }
+
+    }
+    
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
     
 }
 

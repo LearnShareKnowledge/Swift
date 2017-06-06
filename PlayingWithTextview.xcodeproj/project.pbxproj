@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2450D7671EE6B4B700C58B02 /* HydrationMeasurementViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2450D7651EE6ACBF00C58B02 /* HydrationMeasurementViewTests.swift */; };
 		245870801EE5800800F13708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458707F1EE5800800F13708 /* AppDelegate.swift */; };
 		245870821EE5800800F13708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245870811EE5800800F13708 /* ViewController.swift */; };
 		245870851EE5800800F13708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245870831EE5800800F13708 /* Main.storyboard */; };
 		245870871EE5800800F13708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 245870861EE5800800F13708 /* Assets.xcassets */; };
 		2458708A1EE5800800F13708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245870881EE5800800F13708 /* LaunchScreen.storyboard */; };
-		245870951EE5800800F13708 /* PlayingWithTextviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245870941EE5800800F13708 /* PlayingWithTextviewTests.swift */; };
 		245870A01EE5800800F13708 /* PlayingWithTextviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458709F1EE5800800F13708 /* PlayingWithTextviewUITests.swift */; };
+		24A7DE361EE5A56400EAC867 /* HydrationMeasurementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A7DE351EE5A56400EAC867 /* HydrationMeasurementView.swift */; };
 		284148D2CBB91CB4F828DA4A /* Pods_PlayingWithTextview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B2FE83F18CFCC574B52B59 /* Pods_PlayingWithTextview.framework */; };
 		814D67D4566107EE9243DA88 /* Pods_PlayingWithTextviewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5279ED19E21DE25418EB0E /* Pods_PlayingWithTextviewTests.framework */; };
 		AE09A57EE2EF3748593E4FDF /* Pods_PlayingWithTextviewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FEAB48D28070FBADA89237 /* Pods_PlayingWithTextviewUITests.framework */; };
@@ -40,6 +41,7 @@
 		01B2FE83F18CFCC574B52B59 /* Pods_PlayingWithTextview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayingWithTextview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16EA2E877FFC504533BBD39D /* Pods-PlayingWithTextviewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayingWithTextviewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayingWithTextviewUITests/Pods-PlayingWithTextviewUITests.release.xcconfig"; sourceTree = "<group>"; };
 		21ACF9065DFB08EB3CB1EF18 /* Pods-PlayingWithTextviewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayingWithTextviewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayingWithTextviewTests/Pods-PlayingWithTextviewTests.release.xcconfig"; sourceTree = "<group>"; };
+		2450D7651EE6ACBF00C58B02 /* HydrationMeasurementViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HydrationMeasurementViewTests.swift; sourceTree = "<group>"; };
 		2458707C1EE5800800F13708 /* PlayingWithTextview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayingWithTextview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2458707F1EE5800800F13708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		245870811EE5800800F13708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,11 +50,11 @@
 		245870891EE5800800F13708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2458708B1EE5800800F13708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		245870901EE5800800F13708 /* PlayingWithTextviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayingWithTextviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		245870941EE5800800F13708 /* PlayingWithTextviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingWithTextviewTests.swift; sourceTree = "<group>"; };
 		245870961EE5800800F13708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2458709B1EE5800800F13708 /* PlayingWithTextviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayingWithTextviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2458709F1EE5800800F13708 /* PlayingWithTextviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingWithTextviewUITests.swift; sourceTree = "<group>"; };
 		245870A11EE5800800F13708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24A7DE351EE5A56400EAC867 /* HydrationMeasurementView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HydrationMeasurementView.swift; sourceTree = "<group>"; };
 		2847C2EC4B4690F893EA5F50 /* Pods-PlayingWithTextview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayingWithTextview.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayingWithTextview/Pods-PlayingWithTextview.release.xcconfig"; sourceTree = "<group>"; };
 		95C9CAE3ABBC7C0E5BDB7226 /* Pods-PlayingWithTextview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayingWithTextview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayingWithTextview/Pods-PlayingWithTextview.debug.xcconfig"; sourceTree = "<group>"; };
 		B557CC46931D00E6AF595DCF /* Pods-PlayingWithTextviewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayingWithTextviewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayingWithTextviewTests/Pods-PlayingWithTextviewTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2450D7641EE6AC5400C58B02 /* CustomViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				2450D7651EE6ACBF00C58B02 /* HydrationMeasurementViewTests.swift */,
+			);
+			name = CustomViewTests;
+			sourceTree = "<group>";
+		};
 		245870731EE5800800F13708 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +124,7 @@
 		2458707E1EE5800800F13708 /* PlayingWithTextview */ = {
 			isa = PBXGroup;
 			children = (
+				24A7DE341EE5A54300EAC867 /* CustomView */,
 				2458707F1EE5800800F13708 /* AppDelegate.swift */,
 				245870811EE5800800F13708 /* ViewController.swift */,
 				245870831EE5800800F13708 /* Main.storyboard */,
@@ -127,7 +138,7 @@
 		245870931EE5800800F13708 /* PlayingWithTextviewTests */ = {
 			isa = PBXGroup;
 			children = (
-				245870941EE5800800F13708 /* PlayingWithTextviewTests.swift */,
+				2450D7641EE6AC5400C58B02 /* CustomViewTests */,
 				245870961EE5800800F13708 /* Info.plist */,
 			);
 			path = PlayingWithTextviewTests;
@@ -140,6 +151,14 @@
 				245870A11EE5800800F13708 /* Info.plist */,
 			);
 			path = PlayingWithTextviewUITests;
+			sourceTree = "<group>";
+		};
+		24A7DE341EE5A54300EAC867 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				24A7DE351EE5A56400EAC867 /* HydrationMeasurementView.swift */,
+			);
+			name = CustomView;
 			sourceTree = "<group>";
 		};
 		6CA0CE9628535D42D6BD77CA /* Pods */ = {
@@ -448,6 +467,7 @@
 			files = (
 				245870821EE5800800F13708 /* ViewController.swift in Sources */,
 				245870801EE5800800F13708 /* AppDelegate.swift in Sources */,
+				24A7DE361EE5A56400EAC867 /* HydrationMeasurementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				245870951EE5800800F13708 /* PlayingWithTextviewTests.swift in Sources */,
+				2450D7671EE6B4B700C58B02 /* HydrationMeasurementViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,6 +718,7 @@
 				245870A61EE5800800F13708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		245870A71EE5800800F13708 /* Build configuration list for PBXNativeTarget "PlayingWithTextviewTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +727,7 @@
 				245870A91EE5800800F13708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		245870AA1EE5800800F13708 /* Build configuration list for PBXNativeTarget "PlayingWithTextviewUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +736,7 @@
 				245870AC1EE5800800F13708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
